@@ -1,0 +1,396 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.rectangle {
+  background: rgb(250, 254, 254);
+  background: linear-gradient(
+    0deg,
+    rgba(250, 254, 254, 1) 0%,
+    rgba(235, 170, 224, 0.7092086834733893) 100%,
+    rgba(138, 51, 253, 1) 100%,
+    rgba(138, 51, 253, 1) 100%,
+    rgba(135, 45, 253, 1) 100%
+  );
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.uni-soko {
+  display: flex;
+  width: 50%;
+  cursor: pointer;
+  height: 124px;
+  align-items: center;
+  justify-content: center;
+}
+
+.uni-soko > p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #4a99d3;
+}
+
+.images {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0f001a;
+  cursor: pointer;
+  height: 124px;
+}
+.images img {
+  width: 58px;
+  height: 44px;
+}
+
+.sell {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .rectangle {
+    display: block;
+  }
+  .uni-soko {
+    width: 100%;
+  }
+  .images {
+    width: 100%;
+  }
+}
+
+.banner {
+  padding: 0px 70px 100px 74px;
+}
+.banner-inside {
+  display: flex;
+  background: #eaf6ff;
+  z-index: -1;
+  width: 100%;
+  height: 364px;
+}
+.search {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+.search p {
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.search-icon {
+  display: flex;
+  border: 2px solid #fc0b0d;
+  border-radius: 20px;
+  align-items: center;
+  padding: 16px;
+  margin: auto;
+  max-width: 400px;
+}
+
+.search-icon .search {
+  width: 66px;
+  height: 30px;
+  left: 0px;
+}
+.search-icon > input {
+  font-size: 16px;
+  line-height: 19px;
+  color: #004b84;
+  outline: none;
+  border: none;
+  background: #eaf6ff;
+  width: 360px;
+  font-weight: 400;
+}
+.search-icon .slider {
+  width: 34px;
+  height: 32px;
+}
+.banner-right {
+  width: 50%;
+}
+.banner-right img {
+  position: absolute;
+  z-index: 1;
+  margin: 56px auto -74px;
+  width: 436px;
+  height: 382px;
+}
+
+@media only screen and (max-width: 992px) {
+  .search {
+    width: 100%;
+    padding: 20px;
+  }
+  .banner-right {
+    display: none;
+  }
+  .search-icon.search {
+    max-width: 66px;
+  }
+  .search-icon > input {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    padding: 0px 0px 100px 0px;
+  }
+  .search-icon > input {
+    width: 100%;
+  }
+}
+
+.card {
+  padding: 0px 46px;
+  display: flex;
+}
+.card-inside {
+  display: flex;
+  align-items: center;
+  margin: 24px;
+  background: #fafafa;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 36px;
+  justify-content: center;
+}
+.details {
+  text-align: center;
+}
+.details h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  padding: 16px;
+  color: #000000;
+}
+.details p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.details a {
+  background: #fc0b0d;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px 24px;
+  margin-bottom: 10px;
+  display: block;
+  width: 153px;
+  margin: 20px auto;
+}
+.emojione_shopping-cart {
+  width: 255px;
+  height: 238px;
+}
+.flat-color-icons_services {
+  width: 229px;
+  height: 206px;
+}
+@media only screen and (max-width: 1200px) {
+  .card {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-inside {
+    display: block;
+  }
+  .card-inside img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    padding: 0px;
+  }
+  .card-inside img {
+    width: 100%;
+  }
+}
+.unplash {
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.materials {
+  margin: 30px 10px;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.materials h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #eb3223;
+}
+
+.price a {
+  background: #f12b2c;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.decription-date {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 600px) {
+  .unplash {
+    padding: 0px;
+  }
+}
+
+.view {
+  display: flex;
+  padding: 40px 70px 70px;
+  align-items: center;
+}
+.view hr {
+  width: calc(45% - 100px);
+  border: 2px solid #e5e5e5;
+}
+
+.view p {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #fc0b0d;
+  border-radius: 14px;
+  width: 220px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: auto;
+}
+
+.foot {
+  background: #eaf6ff;
+  display: flex;
+}
+.online {
+  width: 50%;
+  padding: 70px;
+}
+.online h1 {
+  font-weight: 400;
+  font-size: 48px;
+  color: #000000;
+}
+.online p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #504a41;
+  margin-top: 30px;
+}
+.contact {
+  width: 50%;
+  display: flex;
+  padding: 70px;
+  justify-content: space-around;
+}
+.contact-us h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.container span {
+  margin-left: 10px;
+}
+
+.about-us h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  padding: 10px;
+}
+.about-us p {
+  padding: 10px;
+}
+@media only screen and (max-width: 992px) {
+  .foot {
+    display: block;
+  }
+  .online {
+    margin: auto;
+    width: 80%;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  online {
+    padding: 0px;
+  }
+  .online h1 {
+    padding-top: 20px;
+  }
+  .contact {
+    display: block;
+  }
+}
